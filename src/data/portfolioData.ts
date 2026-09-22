@@ -5,7 +5,7 @@
 
 export const GITHUB_URL = "https://github.com/avinashpasuluru9-pixel";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/avinash-pasuluru-8a1b29431/";
-export const EMAIL_ADDRESS = "YOUR_EMAIL_HERE";
+export const EMAIL_ADDRESS = "p9515avinash@gmail.com";
 
 export interface InfoCard {
   title: string;

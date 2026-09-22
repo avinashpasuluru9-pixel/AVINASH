@@ -112,24 +112,34 @@ export const Contact: React.FC = () => {
                 {EMAIL_ADDRESS}
               </h3>
               <p className="text-xs text-zinc-400 leading-relaxed mb-6">
-                Editable placeholder. Update with your real address anytime in <code className="text-indigo-300">src/data/portfolioData.ts</code>.
+                Feel free to reach out directly via email for academic inquiries, collaboration, or networking.
               </p>
             </div>
 
             <div className="space-y-2">
+              <a
+                id="connect-card-email-send"
+                href={`mailto:${EMAIL_ADDRESS}`}
+                className="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-indigo-950/70 hover:bg-indigo-900/80 text-indigo-300 hover:text-indigo-200 border border-indigo-800/60 text-xs font-semibold transition-colors"
+              >
+                <Mail className="w-3.5 h-3.5 text-indigo-400" />
+                <span>Send Email</span>
+              </a>
+
               <button
+                id="connect-card-email-copy"
                 onClick={handleCopyEmail}
-                className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-100 text-xs font-semibold transition-colors cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-100 text-xs font-semibold transition-colors cursor-pointer"
               >
                 {copied ? (
                   <>
                     <Check className="w-3.5 h-3.5 text-emerald-400" />
-                    <span className="text-emerald-300">Copied placeholder!</span>
+                    <span className="text-emerald-300">Copied to clipboard!</span>
                   </>
                 ) : (
                   <>
                     <Copy className="w-3.5 h-3.5 text-zinc-400" />
-                    <span>Copy Placeholder</span>
+                    <span>Copy Email Address</span>
                   </>
                 )}
               </button>

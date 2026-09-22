@@ -10,7 +10,7 @@ export const CONFIG = {
   NAME: "AVINASH",
   COURSE: "B.Tech Computer Science & Engineering (AI/ML)",
   LEVEL: "First-Year Student",
-  EMAIL: "YOUR_EMAIL_HERE", // Replace with your actual email
+  EMAIL: "p9515avinash@gmail.com",
   GITHUB_URL: "https://github.com/avinashpasuluru9-pixel",
   LINKEDIN_URL: "https://www.linkedin.com/in/avinash-pasuluru-8a1b29431/",
   
